@@ -1,0 +1,46 @@
+.no-results-container {
+  display: flex;
+  justify-content: center;
+  margin: 150px;
+}
+
+.no-results-box {
+  flex-direction: column;
+}
+
+.no-results-image{
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+.no-results-heading{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color:#f1f2f6;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .no-results-container {
+    margin: 50px;
+  }
+
+  .no-results-heading{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+  .no-results-container {
+    margin: 100px;
+  }
+
+  .no-results-heading{
+    font-size: 14px;
+  }
+}

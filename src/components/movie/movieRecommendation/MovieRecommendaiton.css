@@ -1,0 +1,10 @@
+.movie-recommendation-display-container h2{
+    margin: 20px 10px 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#f1f2f6;
+}
+
+.movie-recommendation{
+    margin-bottom: 50px;
+}

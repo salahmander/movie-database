@@ -1,0 +1,26 @@
+.side-scroll-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-scroll-view-cards {
+  display: flex;
+  background-color: #353b48;
+  min-width: 100%;
+  min-height: 200px;
+  overflow-x: auto;
+}
+
+.side-scroll-view-cards::-webkit-scrollbar {
+  background-color: #353b48;
+}
+.side-scroll-view-cards::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #3f51b5;
+}
+
+.side-scroll-view-cards::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #353b48;
+}

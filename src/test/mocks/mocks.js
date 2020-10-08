@@ -1,0 +1,308 @@
+export const trendingMock = {
+  adult: false,
+  backdrop_path: "/wX1n8ndD7l6PsHSUmo66GRJHcwG.jpg",
+  genre_ids: [18],
+  id: 597156,
+  original_language: "en",
+  original_title: "The Boys in the Band",
+  overview:
+    "New York, 1968. At a birthday party, a surprise guest and a drunken game leave seven gay friends reckoning with unspoken feelings and buried truths.",
+  poster_path: "/2D2gi13hnrXWaspWuWmdbEZ8bef.jpg",
+  release_date: "2020-09-30",
+  title: "The Boys in the Band",
+  video: false,
+  vote_average: 7.4,
+  vote_count: 9,
+  popularity: 73.011,
+  media_type: "movie",
+};
+
+export const nowMovieMock = {
+  popularity: 536.875,
+  vote_count: 21,
+  video: false,
+  poster_path: "/4BgSWFMW2MJ0dT5metLzsRWO7IJ.jpg",
+  id: 726739,
+  adult: false,
+  backdrop_path: "/axPvTxOKwbV70hdJgf3SfI71gDn.jpg",
+  original_language: "en",
+  original_title: "Cats & Dogs 3: Paws Unite",
+  genre_ids: [28, 35],
+  title: "Cats & Dogs 3: Paws Unite",
+  vote_average: 6.8,
+  overview:
+    "It's been ten years since the creation of the Great Truce, an elaborate joint-species surveillance system designed and monitored by cats and dogs to keep the peace when conflicts arise. But when a tech-savvy villain hacks into wireless networks to use frequencies only heard by cats and dogs, he manipulates them into conflict and the worldwide battle between cats and dogs is BACK ON. Now, a team of inexperienced and untested agents will have to use their old-school animal instincts to restore order and peace between cats and dogs everywhere.",
+  release_date: "2020-10-02",
+};
+
+export const nowTVMock = {
+  original_name: "The Boys",
+  genre_ids: [10759, 10765],
+  name: "The Boys",
+  popularity: 1515.554,
+  origin_country: ["US"],
+  vote_count: 2387,
+  first_air_date: "2019-07-25",
+  backdrop_path: "/mGVrXeIjyecj6TKmwPVpHlscEmw.jpg",
+  original_language: "en",
+  id: 76479,
+  vote_average: 8.4,
+  overview:
+    "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+  poster_path: "/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg",
+};
+
+export const movieMock = {
+  poster_path: "/wrJjDB8SSJJKcpXVf4KAxZIHvBZ.jpg",
+  popularity: 42.305,
+  vote_count: 8078,
+  video: false,
+  media_type: "movie",
+  id: 8681,
+  adult: false,
+  backdrop_path: "/uyusXmEyS7QI1BMxAlvbXSLxJxI.jpg",
+  original_language: "en",
+  original_title: "Taken",
+  genre_ids: [28, 53],
+  title: "Taken",
+  vote_average: 7.3,
+  overview:
+    "While vacationing with a friend in Paris, an American girl is kidnapped by a gang of human traffickers intent on selling her into forced prostitution. Working against the clock, her ex-spy father must pull out all the stops to save her. But with his best years possibly behind him, the job may be more than he can handle.",
+  release_date: "2008-02-18",
+};
+
+export const movieInfoMock = {
+  adult: false,
+  backdrop_path: "/uyusXmEyS7QI1BMxAlvbXSLxJxI.jpg",
+  belongs_to_collection: {
+    id: 135483,
+    name: "Taken Collection",
+    poster_path: "/4PNFiSaJWvWhkdOw0KF9Vf7v3gC.jpg",
+    backdrop_path: "/hO1R1TI429PjkOjby4dTPBrWFwn.jpg",
+  },
+  budget: 25000000,
+  genres: [
+    { id: 28, name: "Action" },
+    { id: 53, name: "Thriller" },
+  ],
+  homepage: "",
+  id: 8681,
+  imdb_id: "tt0936501",
+  original_language: "en",
+  original_title: "Taken",
+  overview:
+    "While vacationing with a friend in Paris, an American girl is kidnapped by a gang of human traffickers intent on selling her into forced prostitution. Working against the clock, her ex-spy father must pull out all the stops to save her. But with his best years possibly behind him, the job may be more than he can handle.",
+  popularity: 42.305,
+  poster_path: "/wrJjDB8SSJJKcpXVf4KAxZIHvBZ.jpg",
+  production_companies: [
+    {
+      id: 11845,
+      logo_path: null,
+      name: "Wintergreen Productions",
+      origin_country: "",
+    },
+    {
+      id: 6896,
+      logo_path: "/2Q89KvzxTKB5BAv9RqFIPI1qb7E.png",
+      name: "EuropaCorp",
+      origin_country: "FR",
+    },
+    {
+      id: 1115,
+      logo_path: "/ntH7T5gsN6wtyrfHGHJDTuneQ7o.png",
+      name: "M6 Films",
+      origin_country: "FR",
+    },
+    {
+      id: 6877,
+      logo_path: null,
+      name: "Grive Productions",
+      origin_country: "",
+    },
+    { id: 6586, logo_path: null, name: "TPS Star", origin_country: "FR" },
+    {
+      id: 11261,
+      logo_path: "/g7p4vSwqsIo6zYptyN3hoDxFp7y.png",
+      name: "M6",
+      origin_country: "FR",
+    },
+    {
+      id: 23614,
+      logo_path: null,
+      name: "All Pictures Media",
+      origin_country: "",
+    },
+    {
+      id: 25,
+      logo_path: "/qZCc1lty5FzX30aOCVRBLzaVmcp.png",
+      name: "20th Century Fox",
+      origin_country: "US",
+    },
+    {
+      id: 104,
+      logo_path: "/9aotxauvc9685tq9pTcRJszuT06.png",
+      name: "Canal+",
+      origin_country: "FR",
+    },
+  ],
+  production_countries: [
+    { iso_3166_1: "FR", name: "France" },
+    { iso_3166_1: "GB", name: "United Kingdom" },
+    { iso_3166_1: "US", name: "United States of America" },
+  ],
+  release_date: "2008-02-18",
+  revenue: 226830568,
+  runtime: 94,
+  spoken_languages: [
+    { iso_639_1: "en", name: "English" },
+    { iso_639_1: "fr", name: "Français" },
+    { iso_639_1: "ar", name: "العربية" },
+    { iso_639_1: "sq", name: "shqip" },
+  ],
+  status: "Released",
+  tagline: "They took his daughter.  He'll take their lives.",
+  title: "Taken",
+  video: false,
+  vote_average: 7.3,
+  vote_count: 8080,
+};
+
+export const tvInfoMock = {
+  backdrop_path: "/f3kPFcnHNFFIb0fVZpbiJHX5GYb.jpg",
+  created_by: [
+    {
+      id: 1223955,
+      credit_id: "587a69aec3a36846c300463c",
+      name: "Alexander Cary",
+      profile_path: null,
+    },
+  ],
+  episode_run_time: [42],
+  first_air_date: "2017-02-27",
+  genres: [
+    { id: 10759, name: "Action & Adventure" },
+    { id: 80, name: "Crime" },
+  ],
+  homepage: "http://nbc.com/taken",
+  id: 68006,
+  in_production: false,
+  languages: ["en"],
+  last_air_date: "2018-06-30",
+  last_episode_to_air: {
+    air_date: "2018-06-30",
+    episode_number: 16,
+    id: 1510769,
+    name: "Viceroy",
+    overview:
+      "With Hart in grave danger, the team must find their own way to stop Ramsey before his plan to assassinate a senator starts a war with international terrorists.",
+    production_code: "",
+    season_number: 2,
+    show_id: 68006,
+    still_path: "/nWdgwE0pCJogqM5Mw22fhrXQRXd.jpg",
+    vote_average: 8.0,
+    vote_count: 2,
+  },
+  name: "Taken",
+  next_episode_to_air: null,
+  networks: [
+    {
+      name: "NBC",
+      id: 6,
+      logo_path: "/o3OedEP0f9mfZr33jz2BfXOUK5.png",
+      origin_country: "US",
+    },
+  ],
+  number_of_episodes: 26,
+  number_of_seasons: 2,
+  origin_country: ["US"],
+  original_language: "en",
+  original_name: "Taken",
+  overview:
+    "The origin story of younger, hungrier, former Green Beret Bryan Mills as he deals with a personal tragedy that shakes his world. As he fights to overcome the incident and exact revenge, Mills is pulled into a career as a deadly CIA operative, a job that awakens his very particular, and very dangerous, set of skills.",
+  popularity: 23.561,
+  poster_path: "/bfAGotvZUVOBLHwoHNmWo8nEL7q.jpg",
+  production_companies: [
+    {
+      id: 26727,
+      logo_path: "/jeTxdjXhzgKZyLr3l9MllkTn3fy.png",
+      name: "Universal Television",
+      origin_country: "US",
+    },
+    {
+      id: 25930,
+      logo_path: "/62xhmot9suhsKEDXyJgV9XuydHQ.png",
+      name: "EuropaCorp Television",
+      origin_country: "FR",
+    },
+  ],
+  seasons: [
+    {
+      air_date: "2017-02-27",
+      episode_count: 10,
+      id: 80502,
+      name: "Season 1",
+      overview: "",
+      poster_path: "/z8p11dxeHbbYHnvsrfXdHHBdR8l.jpg",
+      season_number: 1,
+    },
+    {
+      air_date: "2018-01-12",
+      episode_count: 16,
+      id: 96776,
+      name: "Season 2",
+      overview: "",
+      poster_path: "/du7g2Fs1agD364VnVXHQAsYSgwe.jpg",
+      season_number: 2,
+    },
+  ],
+  status: "Ended",
+  type: "Scripted",
+  vote_average: 6.5,
+  vote_count: 151,
+};
+
+export const movieRecommendationMock = {
+  id: 107846,
+  video: false,
+  vote_count: 3576,
+  vote_average: 6.7,
+  title: "Escape Plan",
+  release_date: "2013-10-09",
+  original_language: "en",
+  original_title: "Escape Plan",
+  genre_ids: [28, 53],
+  backdrop_path: "/pYuqnnPKBHOzn3zIGIiTajvyorZ.jpg",
+  adult: false,
+  overview:
+    "Ray Breslin is the world's foremost authority on structural security. After analyzing every high security prison and learning a vast array of survival skills so he can design escape-proof prisons, his skills are put to the test. He's framed and incarcerated in a master prison he designed himself. He needs to escape and find the person who put him behind bars.",
+  poster_path: "/zdnChkdppJjXl8lvwRz8vn6cs2s.jpg",
+  popularity: 41.31,
+};
+
+export const TVRecommendationMock = {
+  backdrop_path: "/d9xqJh5robpEnVOvjpxl29zD7uH.jpg",
+  first_air_date: "2018-02-02",
+  genre_ids: [10765],
+  id: 68421,
+  name: "Altered Carbon",
+  origin_country: ["US"],
+  original_language: "en",
+  original_name: "Altered Carbon",
+  overview:
+    "After 250 years on ice, a prisoner returns to life in a new body with one chance to win his freedom: by solving a mind-bending murder.",
+  poster_path: "/95IsiH4p5937YXQHaOS2W2dWYOG.jpg",
+  vote_average: 7.9,
+  vote_count: 887,
+  networks: [
+    {
+      id: 213,
+      logo: {
+        path: "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
+        aspect_ratio: 3.73134328358209,
+      },
+      name: "Netflix",
+      origin_country: "",
+    },
+  ],
+  popularity: 52.974,
+};

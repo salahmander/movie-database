@@ -1,0 +1,190 @@
+.movie-detail-container {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.movie-detail-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+}
+
+.hero-box-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-poster {
+  flex: 1;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hero-content {
+  flex: 2;
+  padding: 5px 20px;
+  color: white;
+}
+
+.hero-content h1 {
+  font: normal Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+
+.hero-content h2 {
+  font: normal Arial, Helvetica, sans-serif;
+  color: #1874cd;
+}
+
+.hero-box-main h3 {
+  font: normal Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #1874cd;
+  margin: 0px;
+}
+
+.hero-movie-heading-info {
+  display: flex;
+  flex-direction: row;
+}
+.hero-movie-heading-info h4 {
+  font: normal Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: lightgrey;
+  padding: 0px;
+  margin: 5px;
+}
+
+.hero-movie-description {
+  font: normal 16px Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  padding-top: 20px;
+}
+
+.hero-movie-information {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.hero-movie-information ul {
+  padding: 0;
+  margin: 15px;
+}
+
+.hero-movie-information li {
+  font: normal 16px Arial, Helvetica, sans-serif;
+  color: #1874cd;
+  padding: 1.5px;
+}
+
+.hero-movie-information strong {
+  font: normal Arial, Helvetica, sans-serif;
+  color: lightgrey;
+  padding-right: 2px;
+}
+
+.hero-genres {
+  flex: 1;
+}
+
+.hero-ratings {
+  flex: 1;
+}
+
+.hero-ratings li {
+  list-style-type: none;
+}
+
+.hero-ratings ul {
+  margin: 2px;
+}
+
+@media only screen and (min-width: 800px) {
+  /* styles for browsers larger than 960px; */
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    padding: 60px 100px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    padding: 60px 400px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    padding: 60px 400px;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .movie-detail-container {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    padding: 10px 10px;
+  }
+
+  .hero-poster img {
+    width: 100%;
+  }
+
+  .hero-box-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    padding: 60px 30px;
+  }
+}
+
+@media only screen and (device-width: 1024px) {
+  /* default iPad Pro screens */
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    padding: 60px 100px;
+  }
+}

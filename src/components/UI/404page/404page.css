@@ -1,0 +1,46 @@
+.page-not-found-container {
+  display: flex;
+  justify-content: center;
+  margin: 150px;
+}
+
+.page-not-found-box {
+  flex-direction: column;
+}
+
+.page-not-found-image{
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+.page-not-found-heading{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color:#f1f2f6;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .page-not-found-container {
+    margin: 50px;
+  }
+
+  .page-not-found-heading{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+  .page-not-found-container {
+    margin: 100px;
+  }
+
+  .page-not-found-heading{
+    font-size: 14px;
+  }
+}

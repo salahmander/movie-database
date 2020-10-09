@@ -25,3 +25,5 @@ have searched for. This project was made using React, Redux, Material-UI, Axios,
 ![1mobile](https://user-images.githubusercontent.com/16756025/95521661-fe9d6c80-09c1-11eb-8ce0-8f44e55584dd.png)
 ![2mobile](https://user-images.githubusercontent.com/16756025/95521685-05c47a80-09c2-11eb-8cd1-4193262217f8.png)
 ![3mobile](https://user-images.githubusercontent.com/16756025/95521698-0b21c500-09c2-11eb-928e-74f598a5c9d5.png)
+
+API link: https://developers.themoviedb.org/3/getting-started

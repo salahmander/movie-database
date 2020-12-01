@@ -8,7 +8,7 @@ const MovieRecommendaiton = (props) => {
 
   let content = recommendation.total_results ? (
     <div className="movie-recommendation">
-      <h2>recommendation</h2>
+      <h2>Recommendation</h2>
       <SideScrollView movies={recommendation} media={media} />
     </div>
   ) : null;

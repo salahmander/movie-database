@@ -1,3 +1,21 @@
+// Fetch all movies/TV series actions
+export const MOVIES_LIST_FAIL = "MOVIES_LIST_FAIL";
+export const MOVIES_LIST_REQUEST = "MOVIES_LIST_REQUEST";
+export const MOVIES_LIST_RESET = "MOVIES_LIST_RESET";
+export const MOVIES_LIST_SUCCESS = "MOVIES_LIST_SUCCESS";
+
+// Fetch movie detail actions
+export const MOVIE_DETAIL_FAIL = "MOVIE_DETAIL_FAIL";
+export const MOVIE_DETAIL_REQUEST = "MOVIE_DETAIL_REQUEST";
+export const MOVIE_DETAIL_RESET = "MOVIE_DETAIL_RESET";
+export const MOVIE_DETAIL_SUCCESS = "MOVIE_DETAIL_SUCCESS";
+
+// Fetch TV detail actions
+export const TV_DETAIL_FAIL = "TV_DETAIL_FAIL";
+export const TV_DETAIL_REQUEST = "TV_DETAIL_REQUEST";
+export const TV_DETAIL_RESET = "TV_DETAIL_RESET";
+export const TV_DETAIL_SUCCESS = "TV_DETAIL_SUCCESS";
+
 //Movie Reducer
 export const SET_NAME = "SET_NAME";
 export const FETCH_MOVIES = "FETCH_MOVIES";

@@ -37,6 +37,11 @@ describe("react router", () => {
       recommendationLoading: false,
       recommendationError: "",
     },
+    moviesList: {
+      movies: [],
+      loading: false,
+      error: "",
+    },
   });
   it("redirects to 404 if path is invalid", () => {
     const wrapper = mount(

@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 import MovieView from "../../components/movie/movieView/MovieView";
 import Spinner from "../../components/UI/spinner/Spinner";
 
-import * as movieActions from "../../store/actions/movieAction/movieAction";
 import * as moviesListAction from "../../store/actions/movieAction/moviesListAction/moviesListAction";
 
 class MovieDisplay extends Component {

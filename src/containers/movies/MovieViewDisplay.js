@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import MovieView from "../../components/movie/movieView/MovieView";
 import Spinner from "../../components/UI/spinner/Spinner";
 
-import * as movieActions from "../../store/actions/movieAction/movieAction";
+import * as moviesListAction from "../../store/actions/movieAction/moviesListAction/moviesListAction";
 
 class MovieDisplay extends Component {
   componentDidMount() {
@@ -28,13 +28,13 @@ class MovieDisplay extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  loading: state.movies.movieLoading,
-  movies: state.movies.movies,
+  loading: state.moviesList.loading,
+  movies: state.moviesList.movies,
 });
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onFetchMovies: (name) => dispatch(movieActions.fetchMovies(name)),
+    onFetchMovies: (name) => dispatch(moviesListAction.fetchMoviesList(name)),
   };
 };
 

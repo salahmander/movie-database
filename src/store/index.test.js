@@ -24,6 +24,11 @@ describe("rootReducer", () => {
         recommendationLoading: false,
         recommendationError: "",
       },
+      moviesList: {
+        movies: [],
+        loading: false,
+        error: "",
+      },
     });
   });
 });

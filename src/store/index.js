@@ -3,8 +3,11 @@ import landingReducer from "./reducers/landingReducer/landingReducer";
 import movieReducer from "./reducers/movieReducer/movieReducer";
 import recommendationReducer from "./reducers/recommendationReducer/recommendationReducer";
 
+import moviesListReducer from "./reducers/movieReducer/moviesListReducer/moviesListReducer";
+
 export default combineReducers({
   movies: movieReducer,
   landing: landingReducer,
   recommendation: recommendationReducer,
+  moviesList: moviesListReducer,
 });

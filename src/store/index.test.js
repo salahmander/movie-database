@@ -29,6 +29,11 @@ describe("rootReducer", () => {
         loading: false,
         error: "",
       },
+      movieDetail: {
+        movie: [],
+        loading: false,
+        error: "",
+      },
     });
   });
 });

@@ -34,6 +34,11 @@ describe("rootReducer", () => {
         loading: false,
         error: "",
       },
+      tvDetail: {
+        tv: [],
+        loading: false,
+        error: "",
+      },
     });
   });
 });

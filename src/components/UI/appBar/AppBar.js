@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MainAppBar = ({ onSearch, history }) => {
+const MainAppBar = ({ history }) => {
   const classes = useStyles();
 
   const menuId = "primary-search-account-menu";

@@ -12,9 +12,6 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import { fade, makeStyles } from "@material-ui/core/styles";
 
 import { Link, withRouter } from "react-router-dom";
-import { connect } from "react-redux";
-
-import * as movieActions from "../../../store/actions/movieAction/movieAction";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -80,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MainAppBar = ({onSearch, history}) => {
+const MainAppBar = ({ onSearch, history }) => {
   const classes = useStyles();
 
   const menuId = "primary-search-account-menu";
@@ -95,7 +92,6 @@ const MainAppBar = ({onSearch, history}) => {
 
   const fetchMoviesHandler = (event) => {
     event.preventDefault();
-    onSearch(event.target.value);
     history.push(`/movies/${event.target.value}`);
   };
 
@@ -163,10 +159,4 @@ const MainAppBar = ({onSearch, history}) => {
   );
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onSearch: (name) => dispatch(movieActions.setSearchName(name)),
-  };
-};
-
-export default withRouter(connect(null, mapDispatchToProps)(MainAppBar));
+export default withRouter(MainAppBar);

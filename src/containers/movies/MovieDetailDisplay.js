@@ -10,10 +10,12 @@ import * as movieActions from "../../store/actions/movieAction/movieAction";
 import * as recommendationActions from "../../store/actions/recommendationAction/recommendationAction";
 import MovieRecommendaiton from "../../components/movie/movieRecommendation/MovieRecommendation";
 
+import * as movieDetailAction from "../../store/actions/movieAction/movieDetailAction/movieDetailAction";
+
 class MovieDetailDisplay extends Component {
   componentDidMount() {
     if (this.props.match.params.media === "movie") {
-      this.props.onFetchMovieInfo(this.props.match.params.id);
+      this.props.onFetchMovieDetail(this.props.match.params.id);
       this.props.onFetchMovieRecommendation(this.props.match.params.id);
     } else if (this.props.match.params.media === "tv") {
       this.props.onFetchTVInfo(this.props.match.params.id);
@@ -24,7 +26,7 @@ class MovieDetailDisplay extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.match.params.id !== prevProps.match.params.id) {
       if (this.props.match.params.media === "movie") {
-        this.props.onFetchMovieInfo(this.props.match.params.id);
+        this.props.onFetchMovieDetail(this.props.match.params.id);
         this.props.onFetchMovieRecommendation(this.props.match.params.id);
       } else if (this.props.match.params.media === "tv") {
         this.props.onFetchTVInfo(this.props.match.params.id);
@@ -38,11 +40,11 @@ class MovieDetailDisplay extends Component {
       recommendationLoading,
       movieRecommendation,
       TVRecommendation,
-      movieLoading,
+      loading,
       movie,
       TV,
     } = this.props;
-    
+
     let show = this.props.match.params.media === "movie" ? movie : TV;
 
     let recommendation =
@@ -51,7 +53,7 @@ class MovieDetailDisplay extends Component {
         : TVRecommendation;
 
     //Loader for movie content
-    let movieContent = movieLoading ? (
+    let movieContent = loading ? (
       <Spinner />
     ) : (
       <MovieDetail movie={show} runtime={timeConverter(movie.runtime)} />
@@ -77,8 +79,8 @@ class MovieDetailDisplay extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  movieLoading: state.movies.movieLoading,
-  movie: state.movies.movieInfo,
+  loading: state.movieDetail.loading,
+  movie: state.movieDetail.movie,
   TV: state.movies.TVInfo,
   recommendationLoading: state.recommendation.recommendationLoading,
   movieRecommendation: state.recommendation.movieRecommendation,
@@ -87,8 +89,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onFetchMovieInfo: (movieID) =>
-      dispatch(movieActions.fetchMovieInfo(movieID)),
+    onFetchMovieDetail: (movieID) =>
+      dispatch(movieDetailAction.fetchMovieDetail(movieID)),
     onFetchTVInfo: (TVID) => dispatch(movieActions.fetchTVInfo(TVID)),
     onFetchMovieRecommendation: (movieID) =>
       dispatch(recommendationActions.fetchMovieRecommendation(movieID)),

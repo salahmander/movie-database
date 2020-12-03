@@ -16,14 +16,6 @@ const mockStore = configureMockStore(middlewares);
 
 describe("react router", () => {
   const store = mockStore({
-    movies: {
-      name: "",
-      movies: [],
-      movieInfo: [],
-      TVInfo: [],
-      movieLoading: false,
-      movieError: "",
-    },
     landing: {
       landingLoading: false,
       trending: [],
@@ -39,6 +31,16 @@ describe("react router", () => {
     },
     moviesList: {
       movies: [],
+      loading: false,
+      error: "",
+    },
+    movieDetail: {
+      movie: [],
+      loading: false,
+      error: "",
+    },
+    tvDetail: {
+      tv: [],
       loading: false,
       error: "",
     },

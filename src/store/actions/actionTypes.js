@@ -16,15 +16,6 @@ export const TV_DETAIL_REQUEST = "TV_DETAIL_REQUEST";
 export const TV_DETAIL_RESET = "TV_DETAIL_RESET";
 export const TV_DETAIL_SUCCESS = "TV_DETAIL_SUCCESS";
 
-//Movie Reducer
-export const SET_NAME = "SET_NAME";
-export const FETCH_MOVIES = "FETCH_MOVIES";
-export const FETCH_MOVIE_INFO = "FETCH_MOVIE_INFO";
-export const FETCH_TV_INFO = "FETCH_TV_INFO";
-export const START_MOVIE_LOADING = "START_MOVIE_LOADING";
-export const STOP_MOVIE_LOADING = "STOP_MOVIE_LOADING";
-export const MOVIE_ERROR = "MOVIE_ERROR";
-
 //Landing Reducer
 export const FETCH_TRENDING = "FETCH_TRENDING";
 export const FETCH_NOW_MOVIE = "FETCH_NOW_MOVIE";

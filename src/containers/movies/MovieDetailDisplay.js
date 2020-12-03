@@ -6,17 +6,18 @@ import MovieDetail from "../../components//movie/movieDetail/MovieDetail";
 import Spinner from "../../components/UI/spinner/Spinner";
 import { timeConverter } from "../../utility/utility";
 
-import * as movieActions from "../../store/actions/movieAction/movieAction";
+import * as movieDetailAction from "../../store/actions/movieAction/movieDetailAction/movieDetailAction";
 import * as recommendationActions from "../../store/actions/recommendationAction/recommendationAction";
+import * as tvDetailAction from "../../store/actions/movieAction/tvDetailAction/tvDetailAction";
 import MovieRecommendaiton from "../../components/movie/movieRecommendation/MovieRecommendation";
 
 class MovieDetailDisplay extends Component {
   componentDidMount() {
     if (this.props.match.params.media === "movie") {
-      this.props.onFetchMovieInfo(this.props.match.params.id);
+      this.props.onFetchMovieDetail(this.props.match.params.id);
       this.props.onFetchMovieRecommendation(this.props.match.params.id);
     } else if (this.props.match.params.media === "tv") {
-      this.props.onFetchTVInfo(this.props.match.params.id);
+      this.props.onFetchTvDetail(this.props.match.params.id);
       this.props.onFetchTVRecommendation(this.props.match.params.id);
     }
   }
@@ -24,10 +25,10 @@ class MovieDetailDisplay extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.match.params.id !== prevProps.match.params.id) {
       if (this.props.match.params.media === "movie") {
-        this.props.onFetchMovieInfo(this.props.match.params.id);
+        this.props.onFetchMovieDetail(this.props.match.params.id);
         this.props.onFetchMovieRecommendation(this.props.match.params.id);
       } else if (this.props.match.params.media === "tv") {
-        this.props.onFetchTVInfo(this.props.match.params.id);
+        this.props.onFetchTvDetail(this.props.match.params.id);
         this.props.onFetchTVRecommendation(this.props.match.params.id);
       }
     }
@@ -38,12 +39,12 @@ class MovieDetailDisplay extends Component {
       recommendationLoading,
       movieRecommendation,
       TVRecommendation,
-      movieLoading,
+      loading,
       movie,
-      TV,
+      tv,
     } = this.props;
-    
-    let show = this.props.match.params.media === "movie" ? movie : TV;
+
+    let show = this.props.match.params.media === "movie" ? movie : tv;
 
     let recommendation =
       this.props.match.params.media === "movie"
@@ -51,7 +52,7 @@ class MovieDetailDisplay extends Component {
         : TVRecommendation;
 
     //Loader for movie content
-    let movieContent = movieLoading ? (
+    let movieContent = loading ? (
       <Spinner />
     ) : (
       <MovieDetail movie={show} runtime={timeConverter(movie.runtime)} />
@@ -77,9 +78,9 @@ class MovieDetailDisplay extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  movieLoading: state.movies.movieLoading,
-  movie: state.movies.movieInfo,
-  TV: state.movies.TVInfo,
+  loading: state.movieDetail.loading,
+  movie: state.movieDetail.movie,
+  tv: state.tvDetail.tv,
   recommendationLoading: state.recommendation.recommendationLoading,
   movieRecommendation: state.recommendation.movieRecommendation,
   TVRecommendation: state.recommendation.TVRecommendation,
@@ -87,9 +88,9 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onFetchMovieInfo: (movieID) =>
-      dispatch(movieActions.fetchMovieInfo(movieID)),
-    onFetchTVInfo: (TVID) => dispatch(movieActions.fetchTVInfo(TVID)),
+    onFetchMovieDetail: (movieID) =>
+      dispatch(movieDetailAction.fetchMovieDetail(movieID)),
+    onFetchTvDetail: (tvID) => dispatch(tvDetailAction.fetchTvDetail(tvID)),
     onFetchMovieRecommendation: (movieID) =>
       dispatch(recommendationActions.fetchMovieRecommendation(movieID)),
     onFetchTVRecommendation: (TVID) =>

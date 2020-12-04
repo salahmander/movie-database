@@ -1,31 +1,30 @@
 import React, { Component } from "react";
-
 import { connect } from "react-redux";
 
 import "./Home.css";
 
-import Spinner from "../../components/UI/spinner/Spinner";
 import SideScrollView from "../../components/sideScroll/sideScrollView/SideScrollView";
+import Spinner from "../../components/UI/spinner/Spinner";
 
-import { fetchTrending } from "../../store/actions/trendingAction/trendingAction";
 import { fetchLatestMovie } from "../../store/actions/latestMovieAction/latestMovieAction";
 import { fetchLatestTv } from "../../store/actions/latestTvAction/latestTvAction";
+import { fetchTrending } from "../../store/actions/trendingAction/trendingAction";
 
 export class Home extends Component {
   componentDidMount() {
-    this.props.onFetchTrending();
     this.props.onFetchLatestMovie();
     this.props.onFetchLatestTv();
+    this.props.onFetchTrending();
   }
 
   render() {
     const {
-      loadingTrending,
+      latestMovie,
+      latestTv,
       loadingLatestMovie,
       loadingLatestTv,
+      loadingTrending,
       trending,
-      latestTv,
-      latestMovie,
     } = this.props;
     return (
       <>
@@ -74,9 +73,9 @@ const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => {
   return {
-    onFetchTrending: () => dispatch(fetchTrending()),
     onFetchLatestMovie: () => dispatch(fetchLatestMovie()),
     onFetchLatestTv: () => dispatch(fetchLatestTv()),
+    onFetchTrending: () => dispatch(fetchTrending()),
   };
 };
 

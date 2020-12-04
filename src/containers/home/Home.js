@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
-import "./Home.css";
-
 import { connect } from "react-redux";
-import * as landingAction from "../../store/actions/landingAction/landingAction";
 
 import HomeDisplay from "../../components/home/homeDisplay/HomeDisplay";
 import Spinner from "../../components/UI/spinner/Spinner";
@@ -17,7 +14,6 @@ export class Home extends Component {
     this.props.onFetchTrending();
     this.props.onFetchLatestMovie();
     this.props.onFetchLatestTv();
-    this.props.onHomeData();
   }
 
   render() {
@@ -42,12 +38,11 @@ const mapStateToProps = (state) => ({
   latestTv: state.latestTv.latestTv,
   latestMovie: state.latestMovie.latestMovie,
   trending: state.trending.trending,
-  loading: state.landing.loading,
+  loading: state.latestMovie.loading,
 });
 
 export const mapDispatchToProps = (dispatch) => {
   return {
-    onHomeData: () => dispatch(landingAction.fetchAllHomeData()),
     onFetchTrending: () => dispatch(fetchTrending()),
     onFetchLatestMovie: () => dispatch(fetchLatestMovie()),
     onFetchLatestTv: () => dispatch(fetchLatestTv()),

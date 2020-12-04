@@ -3,13 +3,6 @@ import rootReducer from "./index";
 describe("rootReducer", () => {
   it("initializes the default state", () => {
     expect(rootReducer({}, {})).toEqual({
-      landing: {
-        landingLoading: false,
-        trending: [],
-        nowMovie: [],
-        nowTV: [],
-        landingError: [],
-      },
       recommendation: {
         movieRecommendation: {},
         TVRecommendation: {},

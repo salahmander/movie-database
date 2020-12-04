@@ -22,14 +22,14 @@ export const TRENDING_REQUEST = "TRENDING_REQUEST";
 export const TRENDING_SUCCESS = "TRENDING_SUCCESS";
 
 //Fetch landing page now playing (Movies)
-export const NOW_MOVIES_FAIL = "NOW_MOVIES_FAIL";
-export const NOW_MOVIES_REQUEST = "NOW_MOVIES_REQUEST";
-export const NOW_MOVIES_SUCCESS = "NOW_MOVIES_SUCCESS";
+export const LATEST_MOVIES_FAIL = "LATEST_MOVIES_FAIL";
+export const LATEST_MOVIES_REQUEST = "LATEST_MOVIES_REQUEST";
+export const LATEST_MOVIES_SUCCESS = "LATEST_MOVIES_SUCCESS";
 
 //Fetch landing page on the air (TV)
-export const NOW_TV_FAIL = "NOW_TV_FAIL";
-export const NOW_TV_REQUEST = "NOW_TV_REQUEST";
-export const NOW_TV_SUCCESS = "NOW_TV_SUCCESS";
+export const LATEST_TV_FAIL = "LATEST_TV_FAIL";
+export const LATEST_TV_REQUEST = "LATEST_TV_REQUEST";
+export const LATEST_TV_SUCCESS = "LATEST_TV_SUCCESS";
 
 //Landing Reducer
 export const FETCH_TRENDING = "FETCH_TRENDING";

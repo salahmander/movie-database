@@ -21,12 +21,12 @@ export const TRENDING_FAIL = "TRENDING_FAIL";
 export const TRENDING_REQUEST = "TRENDING_REQUEST";
 export const TRENDING_SUCCESS = "TRENDING_SUCCESS";
 
-//Fetch landing page now playing (Movies)
+// Fetch landing page now playing (Movies)
 export const LATEST_MOVIES_FAIL = "LATEST_MOVIES_FAIL";
 export const LATEST_MOVIES_REQUEST = "LATEST_MOVIES_REQUEST";
 export const LATEST_MOVIES_SUCCESS = "LATEST_MOVIES_SUCCESS";
 
-//Fetch landing page on the air (TV)
+// Fetch landing page on the air (TV)
 export const LATEST_TV_FAIL = "LATEST_TV_FAIL";
 export const LATEST_TV_REQUEST = "LATEST_TV_REQUEST";
 export const LATEST_TV_SUCCESS = "LATEST_TV_SUCCESS";

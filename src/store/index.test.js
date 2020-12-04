@@ -31,6 +31,11 @@ describe("rootReducer", () => {
         loading: false,
         error: "",
       },
+      trending: {
+        trending: [],
+        loading: false,
+        error: "",
+      },
     });
   });
 });

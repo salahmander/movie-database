@@ -31,11 +31,11 @@ export const latestMovieFail = (state, action) => {
 
 const latestMovieReducer = (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.TRENDING_REQUEST:
+    case actionTypes.LATEST_MOVIE_REQUEST:
       return latestMovieRequest(state, action);
-    case actionTypes.TRENDING_SUCCESS:
+    case actionTypes.LATEST_MOVIE_SUCCESS:
       return latestMovieSuccess(state, action);
-    case actionTypes.TRENDING_FAIL:
+    case actionTypes.LATEST_MOVIE_FAIL:
       return latestMovieFail(state, action);
     default:
       return state;

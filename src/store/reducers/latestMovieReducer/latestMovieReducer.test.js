@@ -16,7 +16,7 @@ describe("latestMovie reducer", () => {
   it("calls `latestMovieRequest` and set loading to true", () => {
     expect(
       latestMovieReducer(initialState, {
-        type: actionTypes.TRENDING_REQUEST,
+        type: actionTypes.LATEST_MOVIE_REQUEST,
       })
     ).toEqual({
       ...initialState,
@@ -28,7 +28,7 @@ describe("latestMovie reducer", () => {
     const latestMovie = nowMovieMock;
     expect(
       latestMovieReducer(initialState, {
-        type: actionTypes.TRENDING_SUCCESS,
+        type: actionTypes.LATEST_MOVIE_SUCCESS,
         latestMovie,
       })
     ).toEqual({
@@ -42,7 +42,7 @@ describe("latestMovie reducer", () => {
     const error = "Request failed with status code 404";
     expect(
       latestMovieReducer(initialState, {
-        type: actionTypes.TRENDING_FAIL,
+        type: actionTypes.LATEST_MOVIE_FAIL,
         error,
       })
     ).toEqual({

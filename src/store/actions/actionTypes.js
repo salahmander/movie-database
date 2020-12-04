@@ -16,6 +16,21 @@ export const TV_DETAIL_REQUEST = "TV_DETAIL_REQUEST";
 export const TV_DETAIL_RESET = "TV_DETAIL_RESET";
 export const TV_DETAIL_SUCCESS = "TV_DETAIL_SUCCESS";
 
+// Fetch landing page trending movies
+export const TRENDING_FAIL = "TRENDING_FAIL";
+export const TRENDING_REQUEST = "TRENDING_REQUEST";
+export const TRENDING_SUCCESS = "TRENDING_SUCCESS";
+
+// Fetch landing page now playing (Movies)
+export const LATEST_MOVIE_FAIL = "LATEST_MOVIE_FAIL";
+export const LATEST_MOVIE_REQUEST = "LATEST_MOVIE_REQUEST";
+export const LATEST_MOVIE_SUCCESS = "LATEST_MOVIE_SUCCESS";
+
+// Fetch landing page on the air (TV)
+export const LATEST_TV_FAIL = "LATEST_TV_FAIL";
+export const LATEST_TV_REQUEST = "LATEST_TV_REQUEST";
+export const LATEST_TV_SUCCESS = "LATEST_TV_SUCCESS";
+
 //Landing Reducer
 export const FETCH_TRENDING = "FETCH_TRENDING";
 export const FETCH_NOW_MOVIE = "FETCH_NOW_MOVIE";

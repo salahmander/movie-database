@@ -1,48 +1,51 @@
 import React, { Component } from "react";
 
-import "./Home.css";
-
 import { connect } from "react-redux";
-import * as landingAction from "../../store/actions/landingAction/landingAction";
 
 import HomeDisplay from "../../components/home/homeDisplay/HomeDisplay";
 import Spinner from "../../components/UI/spinner/Spinner";
 
+import { fetchTrending } from "../../store/actions/trendingAction/trendingAction";
+import { fetchLatestMovie } from "../../store/actions/latestMovieAction/latestMovieAction";
+import { fetchLatestTv } from "../../store/actions/latestTvAction/latestTvAction";
+
 export class Home extends Component {
   componentDidMount() {
-    this.props.onHomeData();
+    this.props.onFetchTrending();
+    this.props.onFetchLatestMovie();
+    this.props.onFetchLatestTv();
   }
 
   render() {
-    const { loading, trending, nowTV, nowMovie } = this.props;
+    const { loading, trending, latestTv, latestMovie } = this.props;
     return (
       <div className="home-container">
-        <div className="trending=movies">
-          {loading ? (
-            <Spinner />
-          ) : (
-            <HomeDisplay
-              trending={trending}
-              nowTV={nowTV}
-              nowMovie={nowMovie}
-            />
-          )}
-        </div>
+        {loading ? (
+          <Spinner />
+        ) : (
+          <HomeDisplay
+            trending={trending}
+            nowMovie={latestTv}
+            nowTV={latestMovie}
+          />
+        )}
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => ({
-  nowTV: state.landing.nowTV,
-  nowMovie: state.landing.nowMovie,
-  trending: state.landing.trending,
-  loading: state.landing.loading,
+  latestTv: state.latestTv.latestTv,
+  latestMovie: state.latestMovie.latestMovie,
+  trending: state.trending.trending,
+  loading: state.latestMovie.loading,
 });
 
 export const mapDispatchToProps = (dispatch) => {
   return {
-    onHomeData: () => dispatch(landingAction.fetchAllHomeData()),
+    onFetchTrending: () => dispatch(fetchTrending()),
+    onFetchLatestMovie: () => dispatch(fetchLatestMovie()),
+    onFetchLatestTv: () => dispatch(fetchLatestTv()),
   };
 };
 

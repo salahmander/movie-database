@@ -1,0 +1,10 @@
+.home-display-container h2 {
+  margin: 30px 10px 5px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #f1f2f6;
+}
+
+.home-display-TV {
+  margin-bottom: 40px;
+}

@@ -2,6 +2,7 @@ import { combineReducers } from "redux";
 
 import landingReducer from "./reducers/landingReducer/landingReducer";
 import latestMovieReducer from "./reducers/latestMovieReducer/latestMovieReducer";
+import latestTvReducer from "./reducers/latestTvReducer/latestTvReducer";
 import movieDetailReducer from "./reducers/movieReducer/movieDetailReducer/movieDetailReducer";
 import moviesListReducer from "./reducers/movieReducer/moviesListReducer/moviesListReducer";
 import recommendationReducer from "./reducers/recommendationReducer/recommendationReducer";
@@ -11,6 +12,7 @@ import tvDetailReducer from "./reducers/movieReducer/tvDetailReducer/tvDetailRed
 export default combineReducers({
   landing: landingReducer,
   latestMovie: latestMovieReducer,
+  latestTv: latestTvReducer,
   movieDetail: movieDetailReducer,
   moviesList: moviesListReducer,
   recommendation: recommendationReducer,

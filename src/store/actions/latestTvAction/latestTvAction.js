@@ -8,10 +8,10 @@ export const setLatestTvRequest = () => {
   };
 };
 
-export const setLatestTvSuccess = (LatestTv) => {
+export const setLatestTvSuccess = (latestTv) => {
   return {
     type: actionTypes.LATEST_TV_SUCCESS,
-    LatestTv: LatestTv,
+    latestTv: latestTv,
   };
 };
 

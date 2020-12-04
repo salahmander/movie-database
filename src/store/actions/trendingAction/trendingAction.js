@@ -8,10 +8,10 @@ export const setTrendingRequest = () => {
   };
 };
 
-export const setTrendingSuccess = (movie) => {
+export const setTrendingSuccess = (trending) => {
   return {
     type: actionTypes.TRENDING_SUCCESS,
-    movie: movie,
+    trending: trending,
   };
 };
 

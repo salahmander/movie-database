@@ -16,7 +16,7 @@ export const trendingRequest = (state, action) => {
 export const trendingSuccess = (state, action) => {
   return {
     ...state,
-    movie: action.movie,
+    trending: action.trending,
     loading: false,
   };
 };

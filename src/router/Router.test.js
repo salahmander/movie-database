@@ -9,7 +9,7 @@ import Router from "./Router";
 import Home from "../containers/home/Home";
 import PageNotFound from "../components/UI/404page/404page";
 import MovieViewDisplay from "../containers/movies/MovieViewDisplay";
-import MovieDetailDisplay from "../containers/movies/MovieDetailDisplay";
+import MovieDetailDisplay from "../containers/movies/movieDetailDisplay/MovieDetailDisplay";
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -49,6 +49,16 @@ describe("react router", () => {
     },
     latestTv: {
       latestTv: [],
+      loading: false,
+      error: "",
+    },
+    movieRecommendation: {
+      movieRecommendation: [],
+      loading: false,
+      error: "",
+    },
+    TVRecommendation: {
+      tvRecommendation: [],
       loading: false,
       error: "",
     },

@@ -39,7 +39,11 @@ const MovieCard = (props) => {
 
   const actionCardHandler = (event) => {
     event.preventDefault();
-    props.history.push(`/movie/${movie.media_type}/${movie.id}`);
+    if (movie.media_type === "movie") {
+      props.history.push(`/movie/${movie.id}`);
+    } else {
+      props.history.push(`/tv/${movie.id}`);
+    }
   };
 
   const poster = movie.poster_path

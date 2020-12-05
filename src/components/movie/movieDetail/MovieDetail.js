@@ -6,30 +6,28 @@ import noImage from "../../../assets/images/noImage.jpg";
 
 import "./MovieDetail.css";
 
-const MovieDetial = (props) => {
-  const { movie, runtime } = props;
-
-  const backdrop = movie.backdrop_path
-    ? `${backdropURL}${movie.backdrop_path}`
-    : null;
-
-  const poster = movie.poster_path
-    ? `${imageURL}w342${movie.poster_path}`
-    : noImage;
-
-  const genre = movie.genres
-    ? movie.genres.map((genre, index) => <li key={index}>{genre.name}</li>)
-    : null;
-
+const MovieDetial = ({ movie, runtime }) => {
   return (
     <div
       className="movie-detail-container"
-      style={{ backgroundImage: `url(${backdrop})` }}
+      style={{
+        backgroundImage: `url(${
+          movie.backdrop_path ? `${backdropURL}${movie.backdrop_path}` : null
+        })`,
+      }}
     >
       <div className="hero-container">
         <div className="hero-box-main">
           <div className="hero-poster">
-            <img className="movie-poster" src={poster} alt="" />
+            <img
+              className="movie-poster"
+              src={
+                movie.poster_path
+                  ? `${imageURL}w342${movie.poster_path}`
+                  : noImage
+              }
+              alt=""
+            />
           </div>
           <div className="hero-content">
             <div className="hero-movie-heading">
@@ -51,16 +49,23 @@ const MovieDetial = (props) => {
             <div className="hero-movie-information">
               <div className="hero-genres">
                 <h2>Genres</h2>
-                <ul>{genre}</ul>
+                <ul>
+                  {movie.genres &&
+                    movie.genres.map((genre, index) => (
+                      <li key={index}>{genre.name}</li>
+                    ))}
+                </ul>
               </div>
               <div className="hero-ratings">
                 <h2>Ratings</h2>
                 <ul>
                   <li>
-                    <strong>Rotten Tomatoes</strong> 85%  {/*Need to get access to rotten Tomatoes API*/}
+                    <strong>Rotten Tomatoes</strong> 85%{" "}
+                    {/*Need to get access to rotten Tomatoes API*/}
                   </li>
                   <li>
-                    <strong>IMDB</strong> 85% {/*Need to get access to IMDB API*/}
+                    <strong>IMDB</strong> 85%{" "}
+                    {/*Need to get access to IMDB API*/}
                   </li>
                 </ul>
               </div>

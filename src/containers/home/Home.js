@@ -35,7 +35,7 @@ export class Home extends Component {
             {loadingTrending ? (
               <Spinner />
             ) : (
-              <SideScrollView movies={trending} />
+              <SideScrollView movies={trending}/>
             )}
           </div>
           {/* Latest movies out now in Great Britain*/}

@@ -14,9 +14,9 @@ const Router = () => {
     <>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/movie/:id" component={MovieDetailDisplay} />
+        <Route exact path="/tv/:id" component={TvDetailDisplay} />
         <Route exact path="/movies/:name" component={MovieViewDisplay} />
-        <Route exact path="/movie/:media/:id" component={MovieDetailDisplay} />
-        <Route exact path="/tv/:media/:id" component={TvDetailDisplay} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
         <Route component={pageNotFound} />

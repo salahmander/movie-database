@@ -1,5 +1,6 @@
 # React-Redux Movie DB
 React-Redux Project Using The Movie Database API
+https://salahmander.github.io/
 
 A React-Redux app using The Movie Database API. The application allows users to view current trending
 movies, latest streamable movies and TV series currently on AIR. Users can also search and find information about all

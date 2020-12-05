@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import Router from "./Router";
 import Home from "../containers/home/Home";
 import PageNotFound from "../components/UI/404page/404page";
-import MovieViewDisplay from "../containers/movies/MovieViewDisplay";
+import MoviesListDisplay from "../containers/movies/moviesListDisplay/MoviesListDisplay";
 import MovieDetailDisplay from "../containers/movies/movieDetailDisplay/MovieDetailDisplay";
 import TvDetailDisplay from "../containers/tv/tvDetailDisplay/TvDetailDisplay";
 
@@ -88,7 +88,7 @@ describe("react router", () => {
         </MemoryRouter>
       </Provider>
     );
-    expect(wrapper.find(MovieViewDisplay).length).toBe(1);
+    expect(wrapper.find(MoviesListDisplay).length).toBe(1);
     expect(wrapper.find(PageNotFound).length).toBe(0);
   });
 

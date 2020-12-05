@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 import { connect } from "react-redux";
 
-import MovieView from "../../components/movie/movieView/MovieView";
-import Spinner from "../../components/UI/spinner/Spinner";
+import MovieView from "../../../components/movie/movieView/MovieView";
+import Spinner from "../../../components/UI/spinner/Spinner";
 
-import * as moviesListAction from "../../store/actions/movieAction/moviesListAction/moviesListAction";
+import * as moviesListAction from "../../../store/actions/movieAction/moviesListAction/moviesListAction";
 
 class MovieDisplay extends Component {
   componentDidMount() {

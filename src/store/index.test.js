@@ -39,6 +39,16 @@ describe("rootReducer", () => {
         loading: false,
         error: "",
       },
+      movieRecommendation: {
+        movieRecommendation: [],
+        loading: false,
+        error: "",
+      },
+      TVRecommendation: {
+        tvRecommendation: [],
+        loading: false,
+        error: "",
+      },
     });
   });
 });

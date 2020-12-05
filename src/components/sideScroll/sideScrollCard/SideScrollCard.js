@@ -38,10 +38,12 @@ const SideScrollCard = (props) => {
     event.preventDefault();
     // Now playing(movies), On the air(tv) and recommendation do not have a media_type
     // field, they need to be passed in.
-    if (movie.media_type) {
-      props.history.push(`/movie/${movie.media_type}/${movie.id}`);
+    if (movie.media_type === "movie") {
+      props.history.push(`/movie/${movie.id}`);
+    } else if (movie.media_type === "tv") {
+      props.history.push(`/tv/${movie.id}`);
     } else {
-      props.history.push(`/movie/${media}/${movie.id}`);
+      props.history.push(`/${media}/${movie.id}`);
     }
   };
 

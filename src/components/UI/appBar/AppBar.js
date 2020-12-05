@@ -2,14 +2,17 @@ import React from "react";
 
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
-import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
-import AccountCircle from "@material-ui/icons/AccountCircle";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+
 import { fade, makeStyles } from "@material-ui/core/styles";
+
+// import IconButton from "@material-ui/core/IconButton";
+// import AccountCircle from "@material-ui/icons/AccountCircle";
+// import MenuIcon from "@material-ui/icons/Menu";
+
 
 import { Link, withRouter } from "react-router-dom";
 
@@ -80,8 +83,9 @@ const useStyles = makeStyles((theme) => ({
 const MainAppBar = ({ history }) => {
   const classes = useStyles();
 
-  const menuId = "primary-search-account-menu";
-  const mobileMenuId = "primary-search-account-menu-mobile";
+  // Enable once login as been sorted
+  // const menuId = "primary-search-account-menu";
+  // const mobileMenuId = "primary-search-account-menu-mobile";
 
   const enterPressed = (event) => {
     let code = event.keyCode || event.which;
@@ -99,7 +103,8 @@ const MainAppBar = ({ history }) => {
     <div id="main-app-bar" className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
-          <div className={classes.sectionMobile}>
+          {/* Mobile nav bar */}
+          {/*<div className={classes.sectionMobile}>
             <IconButton
               edge="start"
               aria-controls={mobileMenuId}
@@ -109,7 +114,7 @@ const MainAppBar = ({ history }) => {
             >
               <MenuIcon />
             </IconButton>
-          </div>
+            </div>*/}
           <Typography className={classes.title} variant="h6" noWrap>
             <Link to="/">
               <Button variant="contained" color="primary">
@@ -132,7 +137,8 @@ const MainAppBar = ({ history }) => {
             />
           </div>
           <div className={classes.grow} />
-          <div className={classes.sectionDesktop}>
+          {/* Enable once login as been sorted*/}
+          {/*<div className={classes.sectionDesktop}>
             <IconButton
               edge="end"
               aria-label="account of current user"
@@ -152,7 +158,7 @@ const MainAppBar = ({ history }) => {
             >
               <AccountCircle />
             </IconButton>
-          </div>
+            </div> */}
         </Toolbar>
       </AppBar>
     </div>

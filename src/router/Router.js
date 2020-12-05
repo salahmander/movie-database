@@ -15,7 +15,7 @@ const Router = () => {
   return (
     <>
       <Switch>
-        <Route exact path="/movie-database/" component={Home} />
+        <Route exact path="/movie-database" component={Home} />
         <Route exact path="/movie/:id" component={MovieDetailDisplay} />
         <Route exact path="/tv/:id" component={TvDetailDisplay} />
         <Route exact path="/movies/:name" component={MoviesListDisplay} />

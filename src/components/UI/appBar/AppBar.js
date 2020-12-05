@@ -116,7 +116,7 @@ const MainAppBar = ({ history }) => {
             </IconButton>
             </div>*/}
           <Typography className={classes.title} variant="h6" noWrap>
-            <Link to="/movie-database/">
+            <Link to="/movie-database">
               <Button variant="contained" color="primary">
                 Movie-DB
               </Button>

@@ -2,7 +2,7 @@
   "name": "showdb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://salahmander.github.io/",
+  "homepage": "https://salahmander.github.io/movie-database",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",

@@ -50,6 +50,9 @@ const MovieCard = (props) => {
     ? `${imageURL}w154${movie.poster_path}`
     : noImage;
 
+  // some movie objects have the title stored under name
+  const title = movie.title ? movie.title : movie.name;
+
   return (
     <Grid item xs={12} sm={12} md={6} lg={4}>
       <CardActionArea onClick={actionCardHandler}>
@@ -57,14 +60,14 @@ const MovieCard = (props) => {
           <div className={classes.cardDetails}>
             <CardContent>
               <Typography component="h2" variant="h5">
-                {movie.title} {movie.name}
+                {title}
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
                 {movie.release_date}
               </Typography>
               <Typography variant="subtitle1" paragraph>
                 {movie.overview
-                  ? descriptionChecker(movie.overview)
+                  ? descriptionChecker(title, movie.overview)
                   : "No Description :("}
               </Typography>
             </CardContent>

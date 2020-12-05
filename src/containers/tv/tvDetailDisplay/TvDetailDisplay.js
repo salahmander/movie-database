@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import { fetchTvDetail } from "../../../store/actions/movieAction/tvDetailAction/tvDetailAction";
 import { fetchTvRecommendation } from "../../../store/actions/tvRecommendationAction/tvRecommendationAction";
+import { TV_DETAIL_RESET } from "../../../store/actions/actionTypes";
 
 import MovieDetail from "../../../components/movie/movieDetail/MovieDetail";
 import MovieRecommendaiton from "../../../components/movie/movieRecommendation/MovieRecommendation";
@@ -16,6 +17,7 @@ class TvDetailDisplay extends Component {
 
   componentDidUpdate(prevProps) {
     if (this.props.match.params.id !== prevProps.match.params.id) {
+      this.props.onResetTvDetail();
       this.props.onFetchTvDetail(this.props.match.params.id);
       this.props.onFetchTvRecommendation(this.props.match.params.id);
     }
@@ -31,19 +33,12 @@ class TvDetailDisplay extends Component {
 
     return (
       <>
-        {loadingTv ? (
-          <Spinner />
-        ) : (
-          <MovieDetail movie={tv} />
-        )}
+        {loadingTv ? <Spinner /> : <MovieDetail movie={tv} />}
 
         {loadingRecommednation ? (
           <Spinner />
         ) : (
-          <MovieRecommendaiton
-            recommendation={tvRecommendation}
-            media={this.props.match.params.media}
-          />
+          <MovieRecommendaiton recommendation={tvRecommendation} media={"tv"} />
         )}
       </>
     );
@@ -51,18 +46,18 @@ class TvDetailDisplay extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  loadingTv: state.tvDetail.loading,
   tv: state.tvDetail.tv,
+  loadingTv: state.tvDetail.loading,
 
-  loadingRecommednation: state.tvRecommendation.recommendationLoading,
   tvRecommendation: state.tvRecommendation.tvRecommendation,
+  loadingRecommednation: state.tvRecommendation.loading,
 });
 
 const mapDispatchToProps = (dispatch) => {
   return {
     onFetchTvDetail: (tvID) => dispatch(fetchTvDetail(tvID)),
-    onFetchTvRecommendation: (tvID) =>
-      dispatch(fetchTvRecommendation(tvID)),
+    onFetchTvRecommendation: (tvID) => dispatch(fetchTvRecommendation(tvID)),
+    onResetTvDetail: () => dispatch({ type: TV_DETAIL_RESET }),
   };
 };
 

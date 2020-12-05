@@ -34,7 +34,7 @@ class TvDetailDisplay extends Component {
         {loadingTv ? (
           <Spinner />
         ) : (
-          <MovieDetail tv={tv} />
+          <MovieDetail movie={tv} />
         )}
 
         {loadingRecommednation ? (

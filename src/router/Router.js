@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Home from "../containers/home/Home";
 import MovieViewDisplay from "../containers/movies/MovieViewDisplay";
-import MovieDetailDisplay from "../containers/movies/MovieDetailDisplay";
+import MovieDetailDisplay from "../containers/movies/movieDetailDisplay/MovieDetailDisplay";
 import Login from "../containers/account/login/Login";
 import Register from "../containers/account/register/Register";
 import pageNotFound from "../components/UI/404page/404page";

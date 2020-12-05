@@ -22,7 +22,7 @@ export const setTvRecommendationFail = (error) => {
   };
 };
 
-export const fetchtvRecommendation = (tvID) => {
+export const fetchTvRecommendation = (tvID) => {
   return (dispatch) => {
     dispatch(setTvRecommendationRequest());
     return axios

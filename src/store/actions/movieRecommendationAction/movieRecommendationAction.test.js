@@ -40,7 +40,7 @@ describe("movie recommendation action", () => {
         { type: types.MOVIE_RECOMMENDATION_SUCCESS, movieRecommendation: movieRecommendationMock },
       ];
 
-      const store = mockStore({ movie: {} });
+      const store = mockStore({ movieRecommendation: {} });
 
       return store.dispatch(actions.fetchMovieRecommendation()).then(() => {
         expect(store.getActions()).toEqual(expectedAction);

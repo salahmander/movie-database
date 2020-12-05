@@ -10,6 +10,7 @@ import Home from "../containers/home/Home";
 import PageNotFound from "../components/UI/404page/404page";
 import MovieViewDisplay from "../containers/movies/MovieViewDisplay";
 import MovieDetailDisplay from "../containers/movies/movieDetailDisplay/MovieDetailDisplay";
+import TvDetailDisplay from "../containers/tv/tvDetailDisplay/TvDetailDisplay";
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);

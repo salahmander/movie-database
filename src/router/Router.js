@@ -7,7 +7,7 @@ import MovieDetailDisplay from "../containers/movies/movieDetailDisplay/MovieDet
 import MovieViewDisplay from "../containers/movies/MovieViewDisplay";
 import pageNotFound from "../components/UI/404page/404page";
 import Register from "../containers/account/register/Register";
-import TvDetailDisplay from "../containers/movies/tvDetailDisplay/TvDetailDisplay";
+import TvDetailDisplay from "../containers/tv/tvDetailDisplay/TvDetailDisplay";
 
 const Router = () => {
   return (

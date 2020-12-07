@@ -1,11 +1,17 @@
 # React-Redux Movie DB
 React-Redux Project Using The Movie Database API
+
 https://salahmander.github.io/movie-database/
 
-A React-Redux app using The Movie Database API. The application allows users to view current trending
-movies, latest streamable movies and TV series currently on AIR. Users can also search and find information about all
-movies and TV series available, with a list of recommendations to also consider related to the movie/TV series that they
-have searched for. This project was made using React, Redux, Material-UI, Axios, Jest & Enzyme (for testing purposes).
+The Movie Database application was made using React-Redux utilising The Movie Database API. It’s a convenient app that allows users to view current trending movies/ TV shows, latest movies out in Great Britain, and latest TV shows. Users can also search and find different movies/TV shows and view it’s information. Underneath the information section, of the current movie/TV show that has been selected, will be a list of recommendations. If it can’t find any recommendation, nothing will be displayed.
+
+## Tech Stack:
+
+- React, Redux, HTML, CSS, Material-UI,  Axios, 
+
+- Jest, Enzyme
+
+
 
 ## Landing Page (zoom 67%)
 ![landingOut](https://user-images.githubusercontent.com/16756025/95521512-9b133f00-09c1-11eb-8ab4-3c251d663952.png)

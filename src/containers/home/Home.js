@@ -14,13 +14,15 @@ import { fetchTrending } from "../../store/actions/trendingAction/trendingAction
 const Home = () => {
   const dispatch = useDispatch();
 
-  // 
+  // Extract latest movie from the redux store state
   const latestMovieState = useSelector((state) => state.latestMovie);
   const { latestMovie, loadingLatestMovie } = latestMovieState;
 
+  // Extract latest TV from the redux store state
   const latestTvState = useSelector((state) => state.latestTv);
   const { latestTv, loadingLatestTv } = latestTvState;
 
+  // Extract trending movies and tv shows from the redux store state
   const trendingState = useSelector((state) => state.trending);
   const { trending, loadingTrending } = trendingState;
 

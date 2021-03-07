@@ -1,8 +1,9 @@
+// External imports.
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+// Local imports
 import "./Home.css";
-
 import SideScrollView from "../../components/sideScroll/sideScrollView/SideScrollView";
 import Spinner from "../../components/UI/spinner/Spinner";
 
@@ -13,6 +14,7 @@ import { fetchTrending } from "../../store/actions/trendingAction/trendingAction
 const Home = () => {
   const dispatch = useDispatch();
 
+  // 
   const latestMovieState = useSelector((state) => state.latestMovie);
   const { latestMovie, loadingLatestMovie } = latestMovieState;
 

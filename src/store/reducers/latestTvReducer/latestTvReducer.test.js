@@ -24,7 +24,7 @@ describe("latestTv reducer", () => {
     });
   });
 
-  it("calls `latestTvSuccess` and sets data to state", () => {
+  it("calls `latestTvSuccss` and sets data to state", () => {
     const latestTv = nowTVMock;
     expect(
       latestTvReducer(initialState, {

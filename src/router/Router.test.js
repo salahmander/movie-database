@@ -71,7 +71,7 @@ describe("react router", () => {
   it("redirects to home path if path is valid", () => {
     const wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter initialEntries={["/"]}>
+        <MemoryRouter initialEntries={["/movie-database"]}>
           <Router />
         </MemoryRouter>
       </Provider>

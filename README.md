@@ -1,16 +1,28 @@
-# React-Redux Movie DB
-React-Redux Project Using The Movie Database API
+# The Movie Database
+The Movie Database is a frontend project, a movie and TV show directory application. The app allows users to view current trending movies/ TV shows, latest movies out in Great Britain, and latest TV shows. Users may  also search for different movies and TV shows to view different information related to it. The main purpose of this project was to solidify my understanding of React and Redux and learn how to integrate Automated testing using Jest and Enzyme.
 
-https://salahmander.github.io/movie-database/
+### Tech Stack
+Developed using React, Redux, HTML, CSS and Material-UI
 
-The Movie Database application was made using React-Redux utilising The Movie Database API. It’s a convenient app that allows users to view current trending movies/ TV shows, latest movies out in Great Britain, and latest TV shows. Users can also search and find different movies/TV shows and view it’s information. Underneath the information section, of the current movie/TV show that has been selected, will be a list of recommendations. If it can’t find any recommendation, nothing will be displayed.
+Tested  with Jest and Enzyme
 
-## Tech Stack:
+Deployed using GitHub Pages
 
-- React, Redux, HTML, CSS, Material-UI,  Axios, 
+## Demo
 
-- Jest, Enzyme
+The API is live at [movie-DB](https://salahmander.github.io/movie-database/)
 
+## Install Dependencies
+
+```
+npm install
+```
+
+## Run App
+
+```
+npm start
+```
 
 
 ## Landing Page (zoom 67%)

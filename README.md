@@ -24,6 +24,8 @@ npm install
 npm start
 ```
 
+### External API used
+API link: https://developers.themoviedb.org/3/getting-started
 
 ## Landing Page (zoom 67%)
 ![landingOut](https://user-images.githubusercontent.com/16756025/95521512-9b133f00-09c1-11eb-8ab4-3c251d663952.png)
@@ -45,4 +47,3 @@ npm start
 ![2mobile](https://user-images.githubusercontent.com/16756025/95521685-05c47a80-09c2-11eb-8cd1-4193262217f8.png)
 ![3mobile](https://user-images.githubusercontent.com/16756025/95521698-0b21c500-09c2-11eb-928e-74f598a5c9d5.png)
 
-API link: https://developers.themoviedb.org/3/getting-started

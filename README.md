@@ -10,7 +10,7 @@ Deployed using GitHub Pages
 
 ## Demo
 
-The API is live at [movie-DB](https://salahmander.github.io/movie-database/)
+The site is live at [movie-DB](https://salahmander.github.io/movie-database/)
 
 ## Install Dependencies
 
